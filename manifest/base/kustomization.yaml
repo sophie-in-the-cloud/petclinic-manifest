@@ -1,0 +1,6 @@
+resources:
+  - web/web-deploy.yaml
+  - web/web-svc.yaml
+  - was/was-deploy.yaml
+  - was/was-svc.yaml
+  - ingress.yaml

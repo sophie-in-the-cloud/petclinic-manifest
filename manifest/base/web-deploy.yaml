@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: petclinic-web
+  namespace: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: petclinic-web
+  template:
+    metadata:
+      labels:
+        app: petclinic-web
+    spec:
+      containers:
+        - name: apache-web
+          image: 946775837287.dkr.ecr.ap-northeast-2.amazonaws.com/web-repo:latest
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+            limits:
+              cpu: 500m
+
