@@ -27,16 +27,16 @@ spec:
             - name: jdbc.url
               valueFrom:
                 secretKeyRef:
-                  name: db-secret
+                  name: petclinic-db
                   key: jdbc.url
             - name: jdbc.username
               valueFrom:
                 secretKeyRef:
-                  name: db-secret
+                  name: petclinic-db
                   key: jdbc.username
             - name: jdbc.password
               valueFrom:
                 secretKeyRef:
-                  name: db-secret
+                  name: petclinic-db
                   key: jdbc.password
 
