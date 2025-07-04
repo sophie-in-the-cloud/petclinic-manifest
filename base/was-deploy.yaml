@@ -39,4 +39,14 @@ spec:
                 secretKeyRef:
                   name: petclinic-db
                   key: jdbc.password
-
+          volumeMounts:
+            - name: secrets-db
+              mountPath: "/mnt/secrets-store"
+              readOnly: true
+      volumes:
+        - name: secrets-db
+          csi:
+            driver: secrets-store.csi.k8s.io
+            readOnly: true
+            volumeAttributes:
+              secretProviderClass: "petclinic-db"
