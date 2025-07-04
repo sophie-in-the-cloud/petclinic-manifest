@@ -13,6 +13,7 @@ spec:
       labels:
         app: petclinic-was
     spec:
+      serviceAccountName: secrets-sa
       containers:
         - name: petclinic-was
           image: 946775837287.dkr.ecr.ap-northeast-2.amazonaws.com/was-repo:v1.0.0-672a796
