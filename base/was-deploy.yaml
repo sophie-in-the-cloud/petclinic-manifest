@@ -28,17 +28,17 @@ spec:
             - name: jdbc.url
               valueFrom:
                 secretKeyRef:
-                  name: petclinic-db
+                  name: petclinic-db-new
                   key: jdbc.url
             - name: jdbc.username
               valueFrom:
                 secretKeyRef:
-                  name: petclinic-db
+                  name: petclinic-db-new
                   key: jdbc.username
             - name: jdbc.password
               valueFrom:
                 secretKeyRef:
-                  name: petclinic-db
+                  name: petclinic-db-new
                   key: jdbc.password
           volumeMounts:
             - name: secrets-db
@@ -50,4 +50,4 @@ spec:
             driver: secrets-store.csi.k8s.io
             readOnly: true
             volumeAttributes:
-              secretProviderClass: "petclinic-db"
+              secretProviderClass: "petclinic-db-new"
