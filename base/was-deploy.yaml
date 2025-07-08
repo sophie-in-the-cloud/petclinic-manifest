@@ -16,7 +16,7 @@ spec:
       serviceAccountName: secrets-sa
       containers:
         - name: petclinic-was
-          image: 946775837287.dkr.ecr.ap-northeast-2.amazonaws.com/was-repo:v1.0.0-384d8f5
+          image: 946775837287.dkr.ecr.ap-northeast-2.amazonaws.com/was-repo:v1.0.0-4ed91e7
           ports:
             - containerPort: 8080
           resources:
