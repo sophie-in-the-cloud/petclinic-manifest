@@ -11,7 +11,7 @@ spec:
   template:
     metadata:
       labels:
-        appfake: petclinic-web
+        app: petclinic-web
     spec:
       containers:
         - name: apache-web
