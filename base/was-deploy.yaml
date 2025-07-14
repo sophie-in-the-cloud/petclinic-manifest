@@ -10,6 +10,8 @@ spec:
       app: petclinic-was
   template:
     metadata:
+      annotations:
+        rollout-restart-timestamp: "2025-07-08T12:34:56Z"
       labels:
         app: petclinic-was
     spec:
