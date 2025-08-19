@@ -5,6 +5,11 @@ The system follows a 3-Tier architecture and leverages GitHub Actions and Pull R
 
 ---
 
+## 🏗️ Architecture
+![Architecture](CI-CD-arch.png)
+
+---
+
 ## 🧱 Architecture Overview
 
 ```
